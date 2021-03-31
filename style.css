@@ -22,10 +22,16 @@ body{
 }
 .main-nav{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-size: 0.7em;
+    justify-content: flex-end;
     margin: 0;
 
+}
+.logo{
+    height: 80px;
+    width: 80px;
 }
 @media only screen and (max-width: 600px){
     .main-nav{
@@ -33,11 +39,19 @@ body{
         padding: 0;
     }
 }
-.push{
-    margin-left: auto;
+.logo{
+    margin-right: auto;
 }
+.compName{
+    position: absolute;
+    left: 120px;
+    top: 20px
+}
+/*.push{
+    margin-left: auto;
+}*/
 li{
-    padding: 20px;
+    padding: 10px;
      
 }
 a{
@@ -49,13 +63,16 @@ a{
     /*cover*/
 .container{
     display: flex;
-    allign-items: center;
     justify-content: center;
+    text-align: center;
     height: 80vh;
      
 }  
 .cover{
     width:30em;
+}
+.h1{
+    left: 100px;
 }
 /*GRID*/
 .grid-wrapper{
